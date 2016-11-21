@@ -1,0 +1,14 @@
+{
+  "name": "hackaton",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "threex.webar": "*",
+    "three.js": "threejs#*",
+    "dom-to-image": "^2.5.2"
+  }
+}

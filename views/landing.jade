@@ -1,0 +1,271 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Skellefteall
+    // Bootstrap Core CSS
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='/css/stylish-portfolio.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    // Navigation
+    a#menu-toggle.btn.btn-dark.btn-lg.toggle(href='#')
+      i.fa.fa-bars
+    nav#sidebar-wrapper
+      ul.sidebar-nav
+        a#menu-close.btn.btn-light.btn-lg.pull-right.toggle(href='#')
+          i.fa.fa-times
+        li.sidebar-brand
+          a(href='#top', onclick='$("#menu-close").click();') Discover Skellefte&#229
+        li
+          a(href='#top', onclick='$("#menu-close").click();') Home
+        li
+          a(href='#about', onclick='$("#menu-close").click();') About
+        li
+          a(href='#services', onclick='$("#menu-close").click();') Services
+        li
+          a(href='#portfolio', onclick='$("#menu-close").click();') Portfolio
+        li
+          a(href='#contact', onclick='$("#menu-close").click();') Contact
+    // Header
+    header#top.header
+      .text-vertical-center
+        h1 Discover Skellefte&#229ll
+        h3 Skellefte&#229 for all
+        br
+        a.btn.btn-dark.btn-lg(href='#about') Find Out More
+    // About
+    section#about.about
+      .container
+        .row
+          .col-lg-12.text-center
+            h2 The year is 2017. Skellefte&#229 is one of the most innovative cities in augmented reality in Europe. Powered by Skellefteall, residents and visitors alike can just point their phone anywhere, receiving awesome visualizations, descriptions of every place, its history, location and exclusive hot sales. 
+            p.lead
+              | 
+              | .
+              iframe#existing-iframe-example(width='640', height='360', src='https://www.youtube.com/embed/BOkKupKsakc?enablejsapi=1', frameborder='0', style='border: solid 4px #37474F')
+        // /.row
+      // /.container
+       
+
+    // Services
+    // The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/
+    section#services.services.bg-primary
+      .container
+        .row.text-center
+          .col-lg-10.col-lg-offset-1
+            h2 Our Users
+            hr.small
+            .row
+              .col-md-3.col-sm-6
+                .service-item
+                  span.fa-stack.fa-4x
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-cloud.fa-stack-1x.text-primary
+                  h4
+                    strong New Comers and residents alike
+                  p Interact with Skelleftee&#229 like never before. Get information and also points and offers in every place you visit
+                  a.btn.btn-light(href='#') Learn More
+              .col-md-3.col-sm-6
+                .service-item
+                  span.fa-stack.fa-4x
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-compass.fa-stack-1x.text-primary
+                  h4
+                    strong Tourists
+                  p Find out the best places to see, eat, sleep and drink
+                  a.btn.btn-light(href='#') Learn More
+              .col-md-3.col-sm-6
+                .service-item
+                  span.fa-stack.fa-4x
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-flask.fa-stack-1x.text-primary
+                  h4
+                    strong School Kids
+                  p Learn about the history of the city and the government buildings in the area.
+                  a.btn.btn-light(href='#') Learn More
+              .col-md-3.col-sm-6
+                .service-item
+                  span.fa-stack.fa-4x
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-shield.fa-stack-1x.text-primary
+                  h4
+                    strong Citizens
+                  p Visualize information from data platforms and get information about the citie's services.
+                  a.btn.btn-light(href='#') Learn More
+            // /.row (nested)
+          // /.col-lg-10
+        // /.row
+      // /.container
+
+    // Callout
+    aside.callout
+    //  .text-vertical-center
+     //   h1 Vertically Centered Text
+
+
+
+    // Portfolio
+    section#portfolio.portfolio
+      .container
+        .row
+          .col-lg-10.col-lg-offset-1.text-center
+            h2 Our Objects
+            hr.small
+            .row
+              .col-md-6
+                .portfolio-item
+                  a(href='#')
+                    img.img-portfolio.img-responsive(src='img/skelcommun.jpg')
+              .col-md-6
+                .portfolio-item
+                  a(href='#')
+                    img.img-portfolio.img-responsive(src='img/skellhellhospital.jpg')
+              .col-md-6
+                .portfolio-item
+                  a(href='#')
+                    img.img-portfolio.img-responsive(src='img/coop-skelleftea1.jpg')
+              .col-md-6
+                .portfolio-item
+                  a(href='#')
+                    img.img-portfolio.img-responsive(src='img/skellefteaPolice.jpg')
+            // /.row (nested)
+            a.btn.btn-dark(href='#') View More Items
+          // /.col-lg-10
+        // /.row
+      // /.container
+    // Call to Action
+    aside.call-to-action.bg-primary
+      .container
+        .row
+          .col-lg-12.text-center
+            h3 If you want to know more :
+            a.btn.btn-lg.btn-light(href='http://visitskelleftea.se') Tourist Office
+            a.btn.btn-lg.btn-dark(href='http://www.skelleftea.se/invanare') Skelleftea Kommun
+    // Map AIzaSyDtWs-_La-c05hi-BXClrF5uC3ft5kSzmQ
+    section#contact.map
+      iframe(width='100%', height='100%', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://www.google.com/maps/embed/v1/place?key=AIzaSyDtWs-_La-c05hi-BXClrF5uC3ft5kSzmQ&q=place_id:ChIJ79Q3CzGVfkYRSqjzwYFBLzE')
+      br
+      small
+        a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=64.749532,20.954599&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A')
+    // Footer
+    footer
+      .container
+        .row
+          .col-lg-10.col-lg-offset-1.text-center
+            h4
+              strong Discover Skellefte&#229
+            p
+              | Tradgardsgatan
+              br
+              | 93131   Skellefte&#229
+            ul.list-unstyled
+              li
+                i.fa.fa-phone.fa-fw
+                |  (+46) 456-7890
+              li
+                i.fa.fa-envelope-o.fa-fw
+                a(href='mailto:info@skellefteall.com') info@skellefteall.com
+            br
+            ul.list-inline
+              li
+                a(href='#')
+                  i.fa.fa-facebook.fa-fw.fa-3x
+              li
+                a(href='#')
+                  i.fa.fa-twitter.fa-fw.fa-3x
+              li
+                a(href='#')
+                  i.fa.fa-dribbble.fa-fw.fa-3x
+            hr.small
+            p.text-muted Copyright © Your Website 2014
+      a#to-top.btn.btn-dark.btn-lg(href='#top')
+        i.fa.fa-chevron-up.fa-fw.fa-1x
+    // jQuery
+    script(src='js/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
+    // Custom Theme JavaScript
+    script.
+      // Closes the sidebar menu
+      $("#menu-close").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+      });
+      // Opens the sidebar menu
+      $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+      });
+      // Scrolls to the selected menu item on the page
+      $(function() {
+      $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+      if (location.pathname.replace(/^\\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+      $('html,body').animate({
+      scrollTop: target.offset().top
+      }, 1000);
+      return false;
+      }
+      }
+      });
+      });
+      //#to-top button appears after scrolling
+      var fixed = false;
+      $(document).scroll(function() {
+      if ($(this).scrollTop() > 250) {
+      if (!fixed) {
+      fixed = true;
+      // $('#to-top').css({position:'fixed', display:'block'});
+      $('#to-top').show("slow", function() {
+      $('#to-top').css({
+      position: 'fixed',
+      display: 'block'
+      });
+      });
+      }
+      } else {
+      if (fixed) {
+      fixed = false;
+      $('#to-top').hide("slow", function() {
+      $('#to-top').css({
+      display: 'none'
+      });
+      });
+      }
+      }
+      });
+      // Disable Google Maps scrolling
+      // See http://stackoverflow.com/a/25904582/1607849
+      // Disable scroll zooming and bind back the click event
+      var onMapMouseleaveHandler = function(event) {
+      var that = $(this);
+      that.on('click', onMapClickHandler);
+      that.off('mouseleave', onMapMouseleaveHandler);
+      that.find('iframe').css("pointer-events", "none");
+      }
+      var onMapClickHandler = function(event) {
+      var that = $(this);
+      // Disable the click handler until the user leaves the map area
+      that.off('click', onMapClickHandler);
+      // Enable scrolling zoom
+      that.find('iframe').css("pointer-events", "auto");
+      // Handle the mouse leave event
+      that.on('mouseleave', onMapMouseleaveHandler);
+      }
+      // Enable map zooming with mouse scroll when the user clicks the map
+      $('.map').on('click', onMapClickHandler);

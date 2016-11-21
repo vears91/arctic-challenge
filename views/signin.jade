@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	#login.center-vertical
+			form.well(id='form-login', method='post')
+				h2 Hello!
+				h6 Please login to your account
+				.form-group
+					label Email
+					input.form-control(type='text', id='user-tf', name='email')
+				.form-group
+					label Password
+					input.form-control(type='password', id='pass-tf', name='password')
+				.controls
+					button(type='submit').btn.btn-primary.button-sign-in
+						span.glyphicon.glyphicon-lock
+						| Sign In
+				.clearfix
+				hr
+				.btm-links
+					#create-account
+						a(href='/signup') Create An Account
+				.clearfix
